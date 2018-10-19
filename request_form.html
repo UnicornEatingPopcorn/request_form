@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>All you need is Raspyusha</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <div class="container">
+    <form class="needs-validation" id="requestForm" novalidate>
+      <div class="form-row mt-3">
+        <div class="col-md-4">
+          <label for="name">Имя</label>
+          <input type="text" class="form-control" id="name" placeholder="Имя" required>
+          <div class="valid-feedback">
+            Отлично!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02">Фамилия</label>
+          <input type="text" class="form-control" id="surname" placeholder="Фамилия" required>
+          <div class="valid-feedback">
+            Супер!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="e-mail" placeholder="name@example.com">
+          </div>
+        </div>
+      </div>
+    <div class="form-row">
+      <div class="col-md-3">
+        <label for="validationCustom03">Город вылета</label>
+        <input type="text" class="form-control" id="cityFrom" placeholder="Город отправления" required>
+        <div class="invalid-feedback">
+          Пожалуйста, укажите город вылета
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04">Город прилета</label>
+        <input type="text" class="form-control" id="cityTo" placeholder="Пункт назначения" required>
+        <div class="invalid-feedback">
+          Пожалуйста, укажите город прилета
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05">Количество человек в поездке</label>
+        <input type="text" class="form-control" id="travelers" placeholder="Сколько путешественников" required>
+        <div class="invalid-feedback">
+          Пожалуйста, укажите сколько человек едет в путешествие
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustomUsername">Бюджет на путешествие</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="identificator">$</span>
+          </div>
+          <input type="text" class="form-control" id="budget" placeholder="Бюджет" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Пожалуйста, укажите сумму
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <p><div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="agreement" required>
+        <label class="form-check-label" for="agreement">
+          Я согласен(-на) с условиями компании на предоставление услуг.
+        </label>
+        <div class="invalid-feedback">
+          Пожалуйста, подтвердите ваше согласие на обработку данных прежде чем отправите заявку
+        </div>
+      </div></p>
+    </div>
+    <button class="btn btn-primary" type="submit">Отправить</button>
+  </form>
+</div>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/request_form.js"></script>
+
+</body>
+
+</html>

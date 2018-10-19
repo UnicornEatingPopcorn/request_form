@@ -1,0 +1,50 @@
+.fit-width {
+  width: 100%
+}
+
+.list-group .active {
+  background-color: red;
+  border-color: black
+}
+
+body {
+  position: relative;
+}
+
+#home-bg-parallax {
+  /* background: url("images/bg-parallax.jpg"); */
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 100%
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */
+
+ landing {
+  min-height: 1000px;
+
+}
+
+body, html {
+    height: 100%;
+}
+
+.footer-icon-social {
+    bottom: 10px;
+    position: relative;
+}
+
+.navbar-collapse {
+  z-index: 999;
+}
+
+.white-logo-text {
+  color: white;
+  margin-top: 20px
+}
+
+.dropdown-toggle {
+  margin-right: 0 !important;
+}

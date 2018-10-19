@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Rinjani - Theme Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- bootstrap style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- main style -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- et-line-awesome icon -->
+        <link rel="stylesheet" href="css/et-line-icons.css" />
+        <!-- scrollbar -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/doc.min.css" />
+    </head>
+    <body>
+        <!-- Begin Body -->
+        <div class="container-fluid no-padding">
+            <div class="row no-margin">
+                <div class="col-md-12">
+                    <div class="docs-navigation no-padding-left" id="leftCol">
+                        <ul class="nav nav-stacked" id="sidebar">
+                            <li class="active"><a class="sec-link" href="#start">Start</a>
+                                <ul>
+                                    <li><a href="#start-welcome" class="inner-link">Welcome</a></li>
+                                    <li><a href="#start-installation" class="inner-link">Installation</a></li>
+                                    <li><a href="#start-how-to-update" class="inner-link">How To Update</a></li>
+                                    <li><a href="#start-html-structure" class="inner-link">HTML Structure</a></li>
+                                    <li><a href="#start-color-schemes" class="inner-link">Color Schemes</a></li>
+                                    <li><a href="#start-logo-settings" class="inner-link">Logo Settings</a></li>
+                                    <li><a href="#start-icons" class="inner-link">Icons</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#demo">Demo</a></li>
+                            <li><a class="sec-link" href="#header">Navigation</a>
+                                <ul>
+                                    <li><a href="#header-navigation-types" class="inner-link">Navigation Types</a></li>
+                                    <li><a href="#header-page-link" class="inner-link">Page Link</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#background">Background</a>
+                                <ul>
+                                    <li><a href="#background-static" class="inner-link">Background - Static</a></li>
+                                    <li><a href="#background-parallax" class="inner-link">Background - Parallax</a></li>
+                                    <li><a href="#background-slider" class="inner-link">Background - Slideshow</a></li>
+                                    <li><a href="#background-video" class="inner-link">Background - Video</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#pie-chart">Pie Chart</a></li>
+                            <li><a class="sec-link" href="#countdown">Countdown</a></li>
+                            <li><a class="sec-link" href="#contact-form">Contact Form</a></li>
+                            <li><a class="sec-link" href="#helper-classes">Helper Classes</a>
+                                <ul>
+                                    <li><a href="#helper-classes-background" class="inner-link">Background</a></li>
+                                    <li><a href="#helper-classes-border" class="inner-link">Border</a></li>
+                                    <li><a href="#helper-classes-text" class="inner-link">Text Size & Color</a></li>
+                                    <li><a href="#helper-classes-miscellaneous" class="inner-link">Miscellaneous</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#credits">Credits</a></li>
+                        </ul>
+                        <span class="copyright text-center">&copy; 2018. <a href="https://wrapbootstrap.com/user/etap" class="text-primary" target="_blank">etap</a></span>
+                    </div>  
+                    <div class="docs-content" id="mainCol">
+                        <!-- start section -->
+                        <section id="start">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-welcome">
+                                        <h1>RINJANI - MULTI-PURPOSE ONE PAGE THEME</h1>
+                                        <p>Dear customers, thank you for choosing our products. In this document, you will find an in-depth description of all the template's features and functionality.</p>
+                                        <p>If you have any questions not attended to by our template documentation, please contact us. If you like our template, please leave your feedback. Thanks :)</p>
+                                        <p>
+                                            <strong>Template Version:</strong> 3.1<br>
+                                            <strong class="bold">By:</strong> <a href="https://wrapbootstrap.com/user/etap" class="text-primary" target="_blank">etap</a><br>
+                                            <strong class="bold">Response time (up to):</strong> 1 business day.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-installation">
+                                        <h1>Installation</h1>
+                                        <p>Follow the steps below to setup your site template:</p>
+                                        <p>Please note that <strong>RINJANI</strong> is a simple HTML template and not a Wordpress theme/plugin.</p>
+                                        <ol>
+                                            <li>Log into your hosting space via an FTP software (Filezilla for example).</li>
+                                            <li>Unzip the downloaded package and open the <strong>/html</strong> folder to find all the template files.</li>
+                                            <li>Below is the folder structure and needs to be uploaded to your website root directory:
+                                                <ul>
+                                                    <li><code>html/assets/css</code> - Stylesheets folder</li>
+                                                    <li><code>html/assets/fonts</code> – Icon fonts folder</li> 
+                                                    <li><code>html/assets/images</code> - Images folder</li>
+                                                    <li><code>html/assets/img</code> - Images folder</li>
+                                                    <li><code>html/assets/js</code> - Javacripts folder</li>
+                                                    <li><code>html/contact</code> – Contact form PHP files</li>
+                                                </ul>
+                                            </li>
+                                            <li>Upload the HTML files corresponding to the variant of your choice along with all directories in the structure that they appear in your download package. Then, the HTML file should reside in the root directory, and all other files should reside inside their associated folder. <strong>You should upload all or specific HTML files as per your need.</strong></li>
+                                        </ol>
+                                        
+                                        <br>
+                                        <p><span class="label label-danger">Tips</span> Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-how-to-update">
+                                        <h1>How to Update From v3.0 to v3.1</h1>
+                                        <p>Follow the steps below to update your project:</p>
+                                        
+                                        <ol>
+                                            <li>Don't forget to backup your project.</li>
+                                            <li>
+                                                Extract the zip file you've downloaded from wrapbootstrap. Open the extracted folder then copy all the files below into your project folder:
+                                                
+                                                <br><br>
+                                                <strong>CSS:</strong>
+                                                <ul>
+                                                    <li>html/assets/css/bootstrap.min.css</li>
+                                                    <li>html/assets/css/flexslider.css</li>
+                                                    <li>html/assets/css/flickity.min.css</li>
+                                                    <li>html/assets/css/theme.css</li>
+                                                    <li>html/assets/css/theme.min.css</li>
+                                                    <li>html/assets/css/color_blue.css</li>
+                                                    <li>html/assets/css/color_blue2.css</li>
+                                                    <li>html/assets/css/color_green.css</li>
+                                                    <li>html/assets/css/color_orange.css</li>
+                                                    <li>html/assets/css/color_orange2.css</li>
+                                                    <li>html/assets/css/color_pink.css</li>
+                                                    <li>html/assets/css/color_purple.css</li>
+                                                    <li>html/assets/css/color_red.css</li>
+                                                </ul>
+                                                
+                                                <br><br>
+                                                <strong>JS:</strong>
+                                                <ul>
+                                                    <li>html/assets/js/jquery.min.js</li>
+                                                    <li>html/assets/js/bootstrap.min.js</li>
+                                                    <li>html/assets/js/popper.min.js</li>
+                                                    <li>html/assets/js/jquery.flexslider.min.js</li>
+                                                    <li>html/assets/js/flickity.pkgd.min.js</li>
+                                                    <li>html/assets/js/imagesloaded.pkgd.min.js</li>
+                                                    <li>html/assets/js/isotope.pkgd.min.js</li>
+                                                    <li>html/assets/js/theme.js</li>
+                                                </ul>
+                                                
+                                                <br><br>
+                                                <strong>IMG:</strong>
+                                                <ul>
+                                                    <li>html/assets/img/navbar-toggler-dark.svg</li>
+                                                    <li>html/assets/img/navbar-toggler-light.svg</li>
+                                                </ul>
+                                            </li>
+                                            
+                                            <li>
+                                                Open your html file, find the line of code below. Then replace the code as shown below:
+                                                
+                                                <br><br>
+                                                <strong>JS</strong>
+                                                
+                                                <br>
+                                                <ul>
+                                                    <li>
+                                                        BEFORE:
+                                                        <br>
+<pre>
+&lt;script src="assets/js/tether.min.js"&lt;&gt;/script&gt;
+</pre>
+                                                    </li>
+                                                    <li>
+                                                        AFTER:
+                                                        <br>
+<pre>
+&lt;script src="assets/js/popper.min.js"&lt;&gt;/script&gt;
+</pre>
+                                                    </li>
+                                                </ul>
+                                                
+                                                <br><br>
+                                                <strong>Header/Navigation</strong>
+                                                
+                                                <br>
+                                                <ul>
+                                                    <li>
+                                                        BEFORE:
+                                                        <br>
+<pre>
+<span class="comment">&lt;!-- Navigation Start --&gt;</span>
+&lt;nav id="navigation" class="navbar navbar-inverse navbar-toggleable-md bg-inverse fixed-top"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="navbar-header"&gt;
+            &lt;a class="navbar-brand page-scroll" href="#page-top"&gt;
+                &lt;img src="assets/images/logo-text-black.png" alt="" class="logo-text-black"/&gt;
+                &lt;img src="assets/images/logo-text-white.png" alt="" class="logo-text-white"/&gt;
+            &lt;/a>
+
+            &lt;button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-rinjani" aria-controls="navbar-rinjani" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        <span class="comment">&lt;!-- //.navbar-header --&gt;</span>
+
+        &lt;div class="navbar-collapse collapse flex-row-reverse" id="navbar-rinjani"&gt;
+            &lt;ul class="navbar-nav"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#about"&gt;About&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#skills"&gt;Skills&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#services">Services&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#gallery"&gt;Gallery&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#team"&gt;The Team&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#pricing"&gt;Pricing&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a class="nav-link page-scroll" href="#contact"&gt;Contact&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul>
+        &lt;/div>
+        <span class="comment">&lt;!-- //.navbar-collapse --&gt;</span>
+    &lt;/div>
+    <span class="comment">&lt;!-- //.container --&gt;</span>
+&lt;/nav&gt;
+<span class="comment">&lt;!-- //Navigation End --&gt;</span>
+</pre>
+                                                    </li>
+                                                    <li>
+                                                        AFTER:
+                                                        <br>
+<pre>
+<span class="comment">&lt;!-- Header Start --&gt;</span>
+&lt;header class="header-dark fixed-top"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-lg-3 navbar-header"&gt;
+                &lt;a class="navbar-brand page-scroll" href="#page-top"&gt;
+                    &lt;img src="assets/images/logo-text-black.png" alt="" class="logo-text-dark"&gt;
+                    &lt;img src="assets/images/logo-text-white.png" alt="" class="logo-text-light"&gt;
+                &lt;/a&gt;
+
+                &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                    &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            <span class="comment">&lt;!-- //.col-lg-3 --&gt;</span>
+
+            &lt;div class="col-lg-9 navbar-wrapper justify-content-end"&gt;
+                &lt;div id="navigation" class="navbar navbar-expand-lg"&gt;
+                    &lt;div class="collapse navbar-collapse" id="navbar-header"&gt;
+                        &lt;ul class="navbar-nav"&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#about"&gt;About&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#skills"&gt;Skills&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#services"&gt;Services&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#gallery"&gt;Gallery&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#team"&gt;The Team&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#pricing"&gt;Pricing&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                                &lt;a class="nav-link page-scroll" href="#contact"&gt;Contact&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    <span class="comment">&lt;!-- //.navbar-collapse --&gt;</span>
+                &lt;/div&gt;
+                <span class="comment">&lt;!-- //.navbar --&gt;</span>
+            &lt;/div&gt;
+            <span class="comment">&lt;!-- //.col-lg-9 --&gt;</span>
+        &lt;/div&gt;
+        <span class="comment">&lt;!-- //.row --&gt;</span>
+    &lt;/div&gt;
+    <span class="comment">&lt;!-- //.container --&gt;</span>
+&lt;/header&gt;
+<span class="comment">&lt;!-- //Header End --&gt;</span>
+</pre>
+                                                    </li>
+                                                </ul>
+                                                
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-html-structure">
+                                        <h1>HTML Structure</h1>
+                                        <p>RINJANI follows a simple and easy to customize coding structure. Here is the sample for your reference:</p>
+<pre>
+&lt;!doctype html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;meta name="description" content=""/&gt;
+    &lt;meta name="keywords" content=""/&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+
+    <span class="comment">&lt;-- Bootstrap CSS --&gt;</span>
+    &lt;link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"&gt;
+    
+    <span class="comment">&lt;-- Font Awesome CSS --&gt;</span>
+    &lt;link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Include all css plugins (below), or include individual files as needed --&gt;</span>
+    ...
+
+    <span class="comment">&lt;-- Theme CSS --&gt;</span>
+    &lt;link href="assets/css/theme.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="assets/css/style.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Color Scheme CSS --&gt;</span>
+    &lt;link href="assets/css/color_green.css" rel="stylesheet" type="text/css"&gt;
+
+&lt;/head&gt;
+
+&lt;body id="page-top"&gt;
+
+    <span class="comment">&lt;-- Navigation Start --&gt;</span>
+    &lt;nav id="navigation" class="navbar navbar-inverse navbar-toggleable-md bg-inverse fixed-top"&gt;
+        ...
+    &lt;/nav&gt;
+    <span class="comment">&lt;-- //Navigation End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Home Start --&gt;</span>
+    &lt;section id="home"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Home End --&gt;</span>
+    
+    <span class="comment">&lt;-- Intro Start --&gt;</span>
+    &lt;div id="intro"&gt;
+        ...
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //Intro End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - About Start --&gt;</span>
+    &lt;section id="about"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - About End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Fun Facts Start --&gt;</span>
+    &lt;section id="fun-facts"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Fun Facts End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Why Us Start --&gt;</span>
+    &lt;section id="why-us"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Why Us End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Skills Start --&gt;</span>
+    &lt;section id="skills"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Skills End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Services Start --&gt;</span>
+    &lt;section id="services"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Services End --&gt;</span>
+    
+    <span class="comment">&lt;-- Section - Quote Start --&gt;</span>
+    &lt;section id="quote"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Quote End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Gallery Start --&gt;</span>
+    &lt;section id="gallery"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Gallery End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Keep In Touch Start --&gt;</span>
+    &lt;section id="keep-in-touch"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Keep In Touch End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Team Start --&gt;</span>
+    &lt;section id="team"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Team End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Testimonial Start --&gt;</span>
+    &lt;section id="testimonial"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Testimonial End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Pricing Start --&gt;</span>
+    &lt;section id="pricing"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Pricing End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Coming Soon Start --&gt;</span>
+    &lt;section id="coming-soon"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Coming Soon End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - History Start --&gt;</span>
+    &lt;section id="history"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - History End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Contact Start --&gt;</span>
+    &lt;section id="contact"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Contact End --&gt;</span>
+    
+    <span class="comment">&lt;-- Footer Start --&gt;</span>
+    &lt;footer"&gt;
+        ...
+    &lt;/footer&gt;
+    <span class="comment">&lt;-- //Footer End --&gt;</span>
+
+    <span class="comment">&lt;-- Scroll to top --&gt;</span>
+    &lt;a href="#page-top" class="page-scroll scroll-to-top"&gt;&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;&lt;/a&gt;
+
+    <span class="comment">&lt;-- Main JS --&gt;</span>
+    &lt;script src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/js/popper.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+    <span class="comment">&lt;-- Include all js plugins (below) --&gt;</span>
+    ...
+
+    <span class="comment">&lt;-- Theme JS --&gt;</span>
+    &lt;script src="assets/js/theme.js"&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-color-schemes">
+                                        <h1>Color Schemes</h1>
+                                        <p>By default, the template loads this color schemes, you can choose from 8 color schemes:</p>
+<pre>
+<span class="comment">&lt;!-- Color - Blue --&gt;</span>
+&lt;link href="assets/css/color_blue.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Blue 2 --&gt;</span>
+&lt;link href="assets/css/color_blue2.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Green --&gt;</span>
+&lt;link href="assets/css/color_green.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Orange --&gt;</span>
+&lt;link href="assets/css/color_orange.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Orange 2 --&gt;</span>
+&lt;link href="assets/css/color_orange2.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Pink --&gt;</span>
+&lt;link href="assets/css/color_pink.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Purple --&gt;</span>
+&lt;link href="assets/css/color_purple.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Red --&gt;</span>
+&lt;link href="assets/css/color_red.css" rel="stylesheet" type="text/css"&gt;
+</pre>
+                                        
+                                        <h2>Add Custom Color Scheme</h2>
+                                        <p>The basic process is that we are going to use one of the existing color <strong>(color_green.css)</strong> and make changes to it to reflect the new custom color scheme. In order to demonstrate, I'm going to create a new custom color scheme based on brown <strong>(color_brown.css)</strong>.</p>
+                                        
+                                        
+                                        <ol>
+                                            <li>
+                                                <p>Make a copy of the original <strong>color_green.css</strong>.</p>
+                                                <img src="images/custom-color-scheme-1.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-2.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Rename the file <strong>(color_green - Copy.css).</strong></p>
+                                                <img src="images/custom-color-scheme-3.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-4.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p><strong>Replace color scheme.</strong> Using text editor, edit <strong>color_brown.css</strong> and do a Search/Replace on the file. In my example, I'll change: <strong>#0baf4e</strong> (green) to <strong>#663300</strong> (brown).</p>
+                                                <img src="images/custom-color-scheme-5.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-6.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-7.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-8.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Add a link to it in the <code>&lt;head&gt;</code> section of the HTML page.</p>
+<pre>
+&lt;head&gt;
+    <span class="comment">&lt;-- Theme CSS --&gt;</span>
+    &lt;link href="assets/css/theme.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="assets/css/style.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Color Scheme CSS --&gt;</span>
+    &lt;link href="assets/css/color_brown.css" rel="stylesheet" type="text/css"&gt;
+
+&lt;/head&gt;
+</pre>
+                                                <img src="images/custom-color-scheme-9.jpg" alt="" class="thumbnail"/>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-logo-settings">
+                                        <h1>Logo Settings</h1>
+                                        <p>The Logo Container can be found in the <code>#navigation</code> or <code>.navbar</code>.</p>
+                                        <pre>
+<span class="comment">&lt;!-- Navigation Start --&gt;</span>
+&lt;nav id="navigation" class="navbar navbar-inverse navbar-toggleable-md bg-inverse fixed-top"&gt;
+    &lt;div class="container"&gt;
+        &lt;div class="navbar-header"&gt;
+            &lt;a class="navbar-brand page-scroll" href="#page-top"&gt;
+                &lt;img src="assets/images/logo-text-black.png" alt="" class="logo-text-black"/&gt;
+                &lt;img src="assets/images/logo-text-white.png" alt="" class="logo-text-white"/&gt;
+            &lt;/a>
+        &lt;/div>
+        &lt;!-- //.navbar-header --&gt;
+    &lt;/div&gt;
+    &lt;!-- //.container --&gt;
+&lt;/nav&gt;
+<span class="comment">&lt;!-- //Navigation End --&gt;</span>
+                                        </pre>
+                                        <p><span class="label label-danger">Note</span> The Logo Image's maximum height can be <strong>60px</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-icons">
+                                        <h1>Icons</h1>
+                                        <p>We use excellent Fontawesome service. Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS. Over 500 new icons.</p>
+                                        
+                                        <p class="no-margin-bottom">In the <code>&lt;head&gt;</code> of your html, reference the location to your font icons style css.</p>
+<pre>
+<span class="comment">&lt;!-- Font Awesome CSS --&gt;</span>
+&lt;link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;
+</pre>
+     
+                                        <br>
+                                        <p class="no-margin-bottom">You can place font icons just about anywhere using the CSS Prefix <code>.fa-</code> and the icon's name. Font icons is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity).</p>
+                                        
+<pre>
+&lt;i class="fa fa-facebook"&gt;&lt;i&gt;
+&lt;i class="fa fa-twitter"&gt;&lt;i&gt;
+</pre>
+                                        
+                                        <a class="button" href="http://fontawesome.io/icons/" target="_blank">Check The CheatSheet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end start section -->
+                        
+                        <!-- demo section -->
+                        <section id="demo" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="contact-form">
+                                        <h1>Demos</h1>
+                                        
+                                        <div class="row demos">
+                                            <div class="col-md-6">
+                                                <h2>1. Background Static</h2>
+                                                <a href="../html/home-background-static.html" target="_blank"><img src="images/home-background-static.jpg" alt=""></a>    
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>2. Parallax Background</h2>
+                                                <a href="../html/home-background-parallax.html" target="_blank"><img src="images/home-background-parallax.jpg" alt=""></a>    
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>3. Background Slideshow</h2>
+                                                <a href="../html/home-background-slideshow.html" target="_blank"><img src="images/home-background-slideshow.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>4. Video Background (Vimeo)</h2>
+                                                <a href="../html/home-background-video-vimeo.html" target="_blank"><img src="images/home-background-video-vimeo.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>5. Video Background (YouTube)</h2>
+                                                <a href="../html/home-background-video-youtube.html" target="_blank"><img src="images/home-background-video-youtube.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>6. Gallery 2 Column</h2>
+                                                <a href="../html/gallery-col-2.html" target="_blank"><img src="images/gallery-col-2.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>7. Gallery 4 Column</h2>
+                                                <a href="../html/gallery-col-4.html" target="_blank"><img src="images/gallery-col-4.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>8. White Header</h2>
+                                                <a href="../html/white-header.html" target="_blank"><img src="images/white-header.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end demo section -->
+                        
+                        <!-- header section -->
+                        <section id="header" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="header-navigation-types">
+                                        <h1>Navigation Types</h1>
+                                        <p>We have 2 types of navigation as per the demo layout. The list of various navigation types & its descriptions are provided below for your reference:</p>
+                                        <h2>1. Dark Navigation (default)</h2>
+                                        <img src="images/navigation-dark.jpg" alt=""/>
+<pre>
+<span class="comment">&lt;!-- Navigation Start --&gt;</span>
+&lt;nav id="navigation" class="navbar navbar-inverse navbar-toggleable-md bg-inverse fixed-top"&gt;
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- //.container --&gt;
+&lt;/nav&gt;
+<span class="comment">&lt;!-- //Navigation End --&gt;</span>
+</pre>
+                                        <span class="label label-danger">Note</span> You can find this navigation in <strong>home-background-static.html</strong> page.
+                                        
+                                        <h2>2. Light Navigation</h2>
+                                        <img src="images/navigation-light.jpg" alt=""/>                                      
+<pre>
+<span class="comment">&lt;!-- Navigation Start --&gt;</span>
+&lt;nav id="navigation" class="navbar navbar-light navbar-toggleable-md bg-faded fixed-top"&gt;
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- //.container --&gt;
+&lt;/nav&gt;
+<span class="comment">&lt;!-- //Navigation End --&gt;</span>
+</pre>
+                                        <span class="label label-danger">Note</span> You can find this navigation in <strong>white-header.html</strong> page.
+                                <div class="line"></div>
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="header-page-link">
+                                        <h1>Page Link</h1>
+                                        <p>You can add link/button which direct you to other section of the same page with smooth scroll effect like it is one page website. You just need to add class: <code>page-scroll</code> and href should be the ID of the section as per the example shown below:</p>
+<pre>
+&lt;a href="#about" class="page-scroll"&gt;About&lt;/a&gt;
+</pre>                                        
+                                        
+<pre>
+<span class="comment">&lt;!-- Section About Start --&gt;</span>
+&lt;section id="about" class="bg-white"&gt;
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;                    
+&lt;/section&gt;
+<span class="comment">&lt;!-- //Section About End --&gt;</span>
+</pre>                                  
+                                        <p><span class="label label-danger">Note</span>Please note that destination section should have valid ID.</p>                                        
+
+                                        <h2>External Page Link</h2>
+<pre>
+&lt;a href="https://wrapbootstrap.com/" target="_blank"&gt;External Page Link&lt;/a&gt;
+</pre>                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end header section -->
+                        
+                        <!-- background section -->
+                        <section id="background" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Background</h1>
+                                      
+                                        <div id="background-static">
+                                            <h2>Background - Static (default)</h2>
+                                            
+                                            <ol>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>HTML:</strong></p>
+                                            
+<pre>
+<span class="comment">&lt;-- Section - Home Start --&gt;</span>
+&lt;section id="home" class="bg-cover bg-gray bg-overlay-black-6 h-100 w-100"&gt;
+    &lt;div class="container h-100"&gt;
+        ...
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.container --&gt;</span>
+&lt;/section&gt;
+<span class="comment">&lt;-- //Section - Home End --&gt;</span>
+</pre>        
+                                                </li>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>CSS:</strong> <span class="text-gray">(assets/css/style.css)</span></p>
+                                                    
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Image */
+
+#home {
+    background-image: url("../images/bg-home-1.jpg");
+}
+</pre>
+                                                </li>
+                                            </ol>
+                                            
+                                            <br>
+                                            <span class="label label-danger">Note</span> You can find this demo in <strong>home-background-static.html</strong> page.
+                                        </div>
+                                        
+                                        <div class="line"></div>
+                                        <div id="background-parallax">
+                                            <h2>Background - Parallax</h2>
+                                            
+                                            <ol>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>HTML:</strong></p>
+                                            
+<pre>
+<span class="comment">&lt;-- Section - Home Start --&gt;</span>
+&lt;section id="home-bg-parallax" class="h-100 overflow-hidden p-0 w-100"&gt;
+    <span class="comment">&lt;-- BG Parallax --&gt;</span>
+    &lt;div class="bg-parallax bg-overlay-black-6"&gt;&lt;/div&gt;
+
+    &lt;div class="h-100 left-0 position-absolute top-0 w-100"&gt;
+        &lt;div class="container h-100"&gt;
+            ...
+        &lt;/div&gt;
+        <span class="comment">&lt;-- //.container --&gt;</span>
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.h-100 --&gt;</span>
+&lt;/section&gt;
+<span class="comment">&lt;-- //Section - Home End --&gt;</span>
+</pre>        
+                                                </li>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>CSS:</strong> <span class="text-gray">(assets/css/style.css)</span></p>
+                                                    
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Parallax */
+
+#home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-parallax.jpg");
+}
+</pre>
+                                                </li>
+                                            </ol>
+                                            
+                                            <br>
+                                            <span class="label label-danger">Note</span> You can find this demo in <strong>home-background-parallax.html</strong> page.
+                                        </div>
+                                        
+                                        <div class="line"></div>
+                                        
+                                        <div id="background-slider">
+                                            <h2>Background - Slideshow</h2>
+                                            
+                                            <ol>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>HTML:</strong></p>
+                                            
+<pre>
+<span class="comment">&lt;-- Section - Home Start --&gt;</span>
+&lt;section id="home-bg-slideshow" class="bg-gray bg-overlay-black-6 h-100 overflow-hidden p-0 w-100"&gt;
+    <span class="comment">&lt;-- BG Slideshow --&gt;</span>
+    &lt;div class="flexslider h-100 border-0 m-0 rounded-0 w-100"&gt;
+        &lt;div class="slides h-100 w-100"&gt;
+            &lt;span class="bg-cover bg-overlay-black-6 d-block h-100 w-100"&gt;&lt;/span&gt;
+            &lt;span class="bg-cover bg-overlay-black-6 d-block h-100 w-100"&gt;&lt;/span&gt;
+            &lt;span class="bg-cover bg-overlay-black-6 d-block h-100 w-100"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        <span class="comment">&lt;-- //.slides --&gt;</span>
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.flexslider --&gt;</span>
+
+    &lt;div class="h-100 left-0 position-absolute top-0 w-100"&gt;
+        &lt;div class="container h-100"&gt;
+        ...
+        &lt;/div&gt;
+        <span class="comment">&lt;-- //.container --&gt;</span>
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.h-100 --&gt;</span>
+&lt;/section&gt;
+<span class="comment">&lt;-- //Section - Home End --&gt;</span>
+</pre>        
+                                                </li>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>CSS:</strong> <span class="text-gray">(assets/css/style.css)</span></p>
+                                                    
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Slideshow */
+
+#home-bg-slideshow .slides > .bg-cover:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home-bg-slideshow .slides > .bg-cover:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home-bg-slideshow .slides > .bg-cover:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+</pre>
+                                                </li>
+                                            </ol>
+                                            
+                                            <br>
+                                            <span class="label label-danger">Note</span> You can find this demo in <strong>home-background-slideshow.html</strong> page.
+                                        </div>
+                                        
+                                        <div class="line"></div>
+                                        <div id="background-video">
+                                            <h2>Background - Video (Vimeo)</h2>
+     
+                                            <div class="alert alert-info">
+                                                <strong>Important Notice!</strong>
+                                                <ul>
+                                                    <li>The plug in works only if used under a web server. It doesn't work if you run the HTML page as file (file://...).</li>
+                                                    <li>If you want to run it locally on your computer you need a web server installed (for ex: MAMP for Mac, XAMPP for Windows, LAMP for linux) and reach the file from http://localhost... or whatever you mapped in the Host file as localhost.</li>
+                                                    <li>This player doesn't work as background for devices due to the restriction policy adopted by all on managing multimedia files via javascript. It fallsback to the default Vimeo player if used as player (not applied to the body). So video background for mobile device is disabled, only fullscreen poster will be used. <strong>Example: data-video-poster="assets/images/bg-home-1.jpg"</strong></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <ol>
+                                                <li>
+                                                <p class="no-margin-bottom"><strong>Include files:</strong></p>
+<pre>
+<span class="comment">&lt;-- CSS --&gt;</span>
+&lt;link href="assets/css/jquery.mb.vimeo_player.min.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;-- JS --&gt;</span>
+&lt;script src="assets/js/jquery.mb.vimeo_player.min.js"&gt;&lt;/script&gt;
+</pre>                                                                                        
+                                                </li>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>HTML:</strong></p>
+                                            
+<pre>
+<span class="comment">&lt;-- Section - Home Start --&gt;</span>
+&lt;section id="home-bg-video" class="bg-cover bg-gray bg-overlay-black-6 h-100 p-0 w-100"&gt;
+    <span class="comment">&lt;-- BG Video - Vimeo --&gt;</span>
+    &lt;div id="bgndVideoVimeo" class="player bg-overlay-black-5 h-100 w-100"
+        data-property="{videoURL:'https://vimeo.com/108792063'}"
+                data-video-poster="assets/images/bg-home-1.jpg"&gt;
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.player --&gt;</span>
+&lt;/section&gt;
+<span class="comment">&lt;-- //Section - Home End --&gt;</span>
+</pre>        
+                                                </li>
+                                            </ol>
+                                            
+                                            <br>
+                                            <span class="label label-danger">Note</span> You can find this demo in <strong>home-background-video-vimeo.html</strong> page.
+                                        </div>
+                                        
+                                        <div class="line"></div>
+                                        <div id="background-video-youtube">
+                                            <h2>Background Video (YouTube)</h2>
+
+                                            <div class="alert alert-info">
+                                                <strong>Important Notice!</strong>
+                                                <ul>
+                                                    <li>The plug in works only if used under a web server. It doesn't work if you run the HTML page as file (file://...).</li>
+                                                    <li>If you want to run it locally on your computer you need a web server installed (for ex: MAMP for Mac, XAMPP for Windows, LAMP for linux) and reach the file from http://localhost... or whatever you mapped in the Host file as localhost.</li>
+                                                    <li>This player doesn't work as background for devices due to the restriction policy adopted by all on managing multimedia files via javascript. It fallsback to the default YouTube player if used as player (not applied to the body). So video background for mobile device is disabled, only fullscreen poster will be used. <strong>Example: data-video-poster="assets/images/bg-home-1.jpg"</strong></li>
+                                                </ul>
+                                            </div>
+                                            
+                                            <ol>
+                                                <li>
+                                                <p class="no-margin-bottom"><strong>Include files:</strong></p>
+<pre>
+<span class="comment">&lt;-- CSS --&gt;</span>
+&lt;link href="assets/css/jquery.mb.YTPlayer.min.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;-- JS --&gt;</span>
+&lt;script src="assets/js/jquery.mb.YTPlayer.min.js"&gt;&lt;/script&gt;
+</pre>                                                                                        
+                                                </li>
+                                                <li>
+                                                    <p class="no-margin-bottom"><strong>HTML:</strong></p>
+                                            
+<pre>
+<span class="comment">&lt;-- Section - Home Start --&gt;</span>
+&lt;section id="home-bg-video" class="bg-cover bg-gray bg-overlay-black-6 h-100 p-0 w-100"&gt;
+    <span class="comment">&lt;-- BG Video - YouTube --&gt;</span>
+    &lt;div id="bgndVideoYouTube" class="player bg-overlay-black-5 h-100 w-100"
+        data-property="{videoURL:'https://www.youtube.com/watch?v=kc1MSJV_-w8'}"
+        data-video-poster="assets/images/bg-home-1.jpg"&gt;
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.player --&gt;</span>
+&lt;/section&gt;
+<span class="comment">&lt;-- //Section - Home End --&gt;</span>
+</pre>        
+                                                </li>
+                                            </ol>
+                                            
+                                            <br>
+                                            <span class="label label-danger">Note</span> You can find this demo in <strong>home-background-video-youtube.html</strong> page.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end background section -->     
+                        
+                        
+                        <!-- pie chart section -->
+                        <section id="pie-chart" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Pie Chart</h1>
+                                        
+                                        <p class="no-margin-bottom">Setting up Pie Chart is simple. Please use the following codes:</p>
+                                        
+                                        <ol>
+                                            <li>
+                                                <p class="no-margin-bottom"><strong>Include files:</strong></p>
+<pre>
+<span class="comment">&lt;-- Easy Pie Chart JS --&gt;</span>
+&lt;script src="assets/js/jquery.easypiechart.min.js"&gt;&lt;/script&gt;
+
+<span class="comment">&lt;-- Theme JS --&gt;</span>
+&lt;script src="assets/js/theme.js"&gt;&lt;/script&gt;
+</pre>                                        
+                                            </li>
+                                            <li>
+                                                <p class="no-margin-bottom"><strong>HTML Code:</strong></p>
+<pre>
+&lt;div class="pie-chart opacity-9-5"&gt;
+    &lt;div class="chart font-alt text-white" data-percent="0" data-percent-update="83" data-bar-color="#0baf4e" data-track-color="#ffffff"&gt;
+        &lt;span class="percent font-alt font-w-600 title-extra-large-2"&gt;0%&lt;/span&gt;
+    &lt;/div&gt;
+    <span class="comment">&lt;-- //.chart --&gt;</span>
+&lt;/div&gt;
+<span class="comment">&lt;-- //.pie-chart --&gt;</span>
+</pre>                                        
+                                            </li>
+                                            <li>
+                                                <p class="no-margin-bottom"><strong>Configuration Parameter:</strong></p>
+                                                <p class="no-margin-bottom">You can pass a set of these options to the initialize function to set a custom behaviour and look for the plugin.</p>
+                                                <ul>
+                                                    <li><strong>data-percent-update:</strong>  The percent number the pie chart should have.</li>
+                                                    <li><strong>data-bar-color:</strong> The color of the circular bar.</li>
+                                                    <li><strong>data-track-color:</strong> The color of the track for the bar.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end pie chart section -->
+                        
+                        
+                        <!-- countdown section -->
+                        <section id="countdown" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Countdown</h1>
+                                        
+                                        <p class="no-margin-bottom">Setting up Countdown is simple. Please use the following codes:</p>
+                                        
+                                        <ol>
+                                            <li>
+                                                <p class="no-margin-bottom"><strong>Include files:</strong></p>
+<pre>
+<span class="comment">&lt;-- Countdown JS --&gt;</span>
+&lt;script src="assets/js/jquery.countdown.min.js"&gt;&lt;/script&gt;
+
+<span class="comment">&lt;-- Theme JS --&gt;</span>
+&lt;script src="assets/js/theme.js"&gt;&lt;/script&gt;
+</pre>                                        
+                                            </li>
+                                            <li>
+                                                <p class="no-margin-bottom">Add options with <strong>data-until-date</strong> attribute.</p>
+<pre>
+&lt;div id="clock" data-until-date="2019/05/25" class="clock"&gt;&lt;/div&gt;
+</pre>                                        
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end countdown section -->
+                        
+                        <!-- contact form section -->
+                        <section id="contact-form" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="contact-form">
+                                        <h1>Contact Form</h1>
+                                        <p>Your contact form will not work unless you have your files running on a hosting server with PHP / JS. When you have your files ready on your hosting server, you need to edit the settings to make the email function work. To do this, please open <code>html/contact/send_mail.php</code> file and change this line:</p>
+<pre>
+//  Replace with your email 
+$mail_to = 'your_email@your_domain.com';
+</pre>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end contact form section -->
+                        
+                        <!-- helper classes section -->
+                        <section id="helper-classes" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Helper Classes</h1>
+                                        <p>We have created some really useful helper classes for you. Here are a few of them:</p>
+                                    </div>
+                                </div>
+                                    
+                                <div class="row">
+                                    <div id="helper-classes-background" class="col-md-12 docs-content-inner">
+                                        <h1>Background</h1>
+                                        
+                                        <ul>
+                                            <li><code>.bg-black</code> - For background color of black</li>
+                                            <li><code>.bg-black-light</code> - For background color of black</li>
+                                            <li><code>.bg-gray</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-dark</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-light</code> - For background color of gray</li>
+                                            <li><code>.bg-white</code> - For background color of white</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-border" class="col-md-12 docs-content-inner">
+                                        <h1>Border</h1>
+                                        
+                                        <ul>
+                                            <li><code>.border</code> - For border each side</li>
+                                            <li><code>.border-top</code> - For border top side only</li>
+                                            <li><code>.border-right</code> - For border right side only</li>
+                                            <li><code>.border-bottom</code> - For border bottom side only</li>
+                                            <li><code>.border-left</code> - For border left side only</li>
+                                        </ul>
+                                        <br>
+                                        <ul>
+                                            <li><code>.border-top-0</code> - For no border of on the top side</li>
+                                            <li><code>.border-right-0</code> - For no border of on the right side</li>
+                                            <li><code>.border-bottom-0</code> - For no border of on the bottom side</li>
+                                            <li><code>.border-left-0</code> - For no border of on the left side</li>
+                                            <li><code>.border-0</code> - For no border on all sides</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Width</strong></p>
+                                        <ul>
+                                            <li><code>.border-thick</code> - For thick border</li>
+                                            <li><code>.border-medium-thick</code> - For very thick border</li>
+                                            <li><code>.border-extra-thick</code> - For very thick border</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Radius</strong></p>
+                                        <ul>
+                                            <li><code>.rounded</code> - For border radius</li>
+                                            <li><code>.rounded-circle</code> - For border radius of 50%</li>
+                                            <li><code>.rounded-0</code> - For no border radius</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Color</strong></p>
+                                        <ul>
+                                            <li><code>.border-black</code> - For border color of black</li>
+                                            <li><code>.border-black-light</code> - For border color of black</li>
+                                            <li><code>.border-gray</code> - For border color of gray</li>
+                                            <li><code>.border-gray-dark</code> - For border color of gray</li>
+                                            <li><code>.border-gray-light</code> - For border color of gray</li>
+                                            <li><code>.border-white</code> - For border color of white</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-text" class="col-md-12 docs-content-inner">
+                                        <h1>Text Size & Color</h1>
+                                        
+                                        <p><strong>Text Size</strong></p>
+                                        <ul>
+                                            <li><code>.text-extra-small</code> - For extra small size of text</li>
+                                            <li><code>.text-small</code> - For small size of text</li>
+                                            <li><code>.text-medium</code> - For medium size of text</li>
+                                            <li><code>.text-large</code> - For large size of text</li>
+                                            <li><code>.text-extra-large</code> - For extra large size of text</li>
+                                            <li><code>.title-small</code> - For small size of title</li>
+                                            <li><code>.title-medium</code> - For medium size of title</li>
+                                            <li><code>.title-large</code> - For large size of title</li>
+                                            <li><code>.title-extra-large</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-2</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-3</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-4</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-5</code> - For extra large size of title</li>
+                                            <li><code>.title-big</code> - For very large size of title</li>
+                                            <li><code>.title-big2</code> - For very large size of title</li>
+                                            <li><code>.title-big3</code> - For very large size of title</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Text Color</strong></p>
+                                        <ul>
+                                            <li><code>.text-black</code> - For black color text</li>
+                                            <li><code>.text-black-light</code> - For black color text</li>
+                                            <li><code>.text-gray</code> - For gray color text</li>
+                                            <li><code>.text-gray-dark</code> - For gray color text</li>
+                                            <li><code>.text-gray-light</code> - For gray color text</li>
+                                            <li><code>.text-white</code> - For white color text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-miscellaneous" class="col-md-12 docs-content-inner">
+                                        <h1>Miscellaneous</h1>
+                                        
+                                        <p><strong>Display</strong></p>
+                                        <ul>
+                                            <li><code>.d-block</code> - For display block</li>
+                                            <li><code>.d-inherit</code> - For display inherit</li>
+                                            <li><code>.d-inline</code> - For display inline</li>
+                                            <li><code>.d-inline-block</code> - For display inline-block</li>
+                                            <li><code>.d-table</code> - For display table</li>
+                                            <li><code>.d-table-cell</code> - For display table-cell</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Font Weight</strong></p>
+                                        <ul>
+                                            <li><code>.font-w-300</code> - For font weight of 300</li>
+                                            <li><code>.font-w-400</code> - For font weight of 400</li>
+                                            <li><code>.font-w-600</code> - For font weight of 600</li>
+                                            <li><code>.font-w-700</code> - For font weight of 700</li>
+                                            <li><code>.font-w-900</code> - For font weight of 900</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Letter Spacing</strong></p>
+                                        <ul>
+                                            <li><code>.letter-spacing-1</code> - For letter spacing of 1 pixel</li>
+                                            <li><code>.letter-spacing-2</code> - For letter spacing of 2 pixel</li>
+                                            <li><code>.letter-spacing-3</code> - For letter spacing of 3 pixel</li>
+                                            <li><code>.letter-spacing-4</code> - For letter spacing of 4 pixel</li>
+                                            <li><code>.letter-spacing-5</code> - For letter spacing of 5 pixel</li>
+                                            <li><code>.letter-spacing-6</code> - For letter spacing of 6 pixel</li>
+                                            <li><code>.letter-spacing-7</code> - For letter spacing of 7 pixel</li>
+                                            <li><code>.letter-spacing-8</code> - For letter spacing of 8 pixel</li>
+                                            <li><code>.letter-spacing-9</code> - For letter spacing of 9 pixel</li>
+                                            <li><code>.letter-spacing-10</code> - For letter spacing of 10 pixel</li>
+                                            <li><code>.no-letter-spacing</code> - For letter spacing of none</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Opacity</strong></p>
+                                        <ul>
+                                            <li><code>.opacity-0</code> - Fully transparent</li>
+                                            <li><code>.opacity-1</code> - For opacity level of 0.1</li>
+                                            <li><code>.opacity-2</code> - For opacity level of 0.2</li>
+                                            <li><code>.opacity-3</code> - For opacity level of 0.3</li>
+                                            <li><code>.opacity-4</code> - For opacity level of 0.4</li>
+                                            <li><code>.opacity-5</code> - For opacity level of 0.5</li>
+                                            <li><code>.opacity-6</code> - For opacity level of 0.6</li>
+                                            <li><code>.opacity-7</code> - For opacity level of 0.7</li>
+                                            <li><code>.opacity-8</code> - For opacity level of 0.8</li>
+                                            <li><code>.opacity-9</code> - For opacity level of 0.9</li>
+                                            <li><code>.no-opacity</code> - Fully opaque</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Overflow</strong></p>
+                                        <ul>
+                                            <li><code>.overflow-hidden</code> - For overflow hidden</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Position</strong></p>
+                                        <ul>
+                                            <li><code>.position-absolute</code> - For element position absolute</li>
+                                            <li><code>.position-fixed</code> - For element position fixed</li>
+                                            <li><code>.position-relative</code> - For element position relative</li>
+                                            <li><code>.top-0</code> - For element position fixed to top of the body or parent element</li>
+                                            <li><code>.right-0</code> - For element position fixed to right of the body or parent element</li>
+                                            <li><code>.bottom-0</code> - For element position fixed to bottom of the body or parent element</li>
+                                            <li><code>.left-0</code> - For element position fixed to left of the body or parent element</li>
+                                            <li><code>.top-50</code> - For element position fixed 50% down from the top of the body or parent element</li>
+                                            <li><code>.left-50</code> - For element position fixed 50% from the left of the body or parent element</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end helper classes section -->
+                       
+                        <!-- credits section -->
+                        <section id="credits" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="credits">
+                                        <h1>Credits and Sources</h1>
+                                        <p>We would really love to take this opportunity to appreciate guys whose items were helpful to us to make RINJANI a really beautiful theme for our awesome users:</p>
+                                        <div class="col-md-12 no-padding">
+                                            <div class="col-md-12">
+                                                <h2 class="no-padding-top">Plugins</h2>
+                                                <ul class="credits">
+                                                    <li><a href="https://github.com/mhuggins/jquery-countTo" class="text-primary" target="_blank">Count To</a></li>
+                                                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" class="text-primary" target="_blank">Easing</a></li>
+                                                    <li><a href="http://fortawesome.github.io/Font-Awesome/icons/" class="text-primary" target="_blank">Font Awesome</a></li>
+                                                    <li><a href="https://woocommerce.com/flexslider/" class="text-primary" target="_blank">Flexslider</a></li>
+                                                    <li><a href="http://flickity.metafizzy.co/" class="text-primary" target="_blank">Flickity</a></li>
+                                                    <li><a href="http://imagesloaded.desandro.com/" class="text-primary" target="_blank">Images Loaded</a></li>
+                                                    <li><a href="https://github.com/protonet/jquery.inview" class="text-primary" target="_blank">Inview</a></li>
+                                                    <li><a href="http://isotope.metafizzy.co/" class="text-primary" target="_blank">Isotope</a></li>
+                                                    <li><a href="http://jquery.com/" class="text-primary" target="_blank">jQuery</a></li>
+                                                    <li><a href="https://github.com/pupunzi/jQuery.mb.vimeo_player" class="text-primary" target="_blank">jquery.mb.vimeoPlayer</a></li>
+                                                    <li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer" class="text-primary" target="_blank">jquery.mb.YTPlayer</a></li>
+                                                    <li><a href="http://dimsemenov.com/plugins/magnific-popup/" class="text-primary" target="_blank">Magnific Popup</a></li>
+                                                    <li><a href="http://brm.io/jquery-match-height/" class="text-primary" target="_blank">Match Height</a></li>
+                                                    <li><a href="http://github.hubspot.com/pace/docs/welcome/" class="text-primary" target="_blank">Pace</a></li>
+                                                    <li><a href="http://scrollmagic.io/" class="text-primary" target="_blank">Scroll Magic</a></li>
+                                                    <li><a href="http://getbootstrap.com/" class="text-primary" target="_blank">Twitter Bootstrap</a></li>
+                                                    <li><a href="http://jqueryvalidation.org/" class="text-primary" target="_blank">Validation</a></li>
+                                                </ul>
+                                                <br>
+                                                <br>
+                                                <h2 class="no-padding-top">PHP Library</h2>
+                                                <ul class="credits">
+                                                    <li><a href="http://phpmailer.worxware.com/" class="text-primary" target="_blank">PHP Mailer</a></li>
+                                                </ul>
+                                                <br>
+                                                <br>
+                                                <h2 class="no-padding-top">Images used on demo</h2>
+                                                <p>The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+                                                <ul class="credits">
+                                                    <li><a href="http://deathtothestockphoto.com/" class="text-primary" target="_blank">Death to Stock</a></li>
+                                                    <li><a href="https://unsplash.com/" class="text-primary" target="_blank">Unsplash</a></li>
+                                                </ul>
+                                                <br>
+                                                <br>
+                                                <h2 class="no-padding-top">Video Background</h2>
+                                                <ul class="credits">
+                                                    <li><a href="https://www.videvo.net/video/ny-police-dept-/1794/" class="text-primary" target="_blank">NY Police Dept</a></li>
+                                                    <li><a href="https://vimeo.com/108792063" class="text-primary" target="_blank">Boston Layer-Lapse</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end credits section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll to top --> 
+        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a> 
+        <!-- scroll to top End... --> 
+        <div id="footer"></div>
+        <script type='text/javascript' src="js/jquery.min.js"></script>
+        <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        <script type='text/javascript' src="js/smooth-scroll.js"></script>
+        <script type='text/javascript' src="js/jquery.mCustomScrollbar.min.js"></script>
+        <script type='text/javascript' src="js/custom.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+/*
+* Color
+*/
+
+
+/*
+* Background color
+*/
+
+.bg-base-color {
+    background-color: #016cff !important;
+}
+
+
+/*
+* Border color
+*/
+
+.border-base-color {
+    border-color: #016cff !important;
+}
+
+
+/*
+* Button color
+*/
+
+.btn-base-color {
+    background-color: #016cff !important;
+}
+
+
+/*
+* Button color - hover
+*/
+
+.btn-hover-base-color:hover {
+    background-color: #016cff !important;
+}
+
+
+/*
+* Features Block
+*/
+
+.features-block:before {
+    background: -moz-linear-gradient(top, rgba(1, 108, 255, 0) 0%, rgba(1, 108, 255, 0.9) 15%, rgba(1, 108, 255, 0.9) 85%, rgba(1, 108, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(1, 108, 255, 0)), color-stop(15%, rgba(1, 108, 255, 0.9)), color-stop(85%, rgba(1, 108, 255, 0.9)), color-stop(100%, rgba(1, 108, 255, 0)));
+    background: -webkit-linear-gradient(top, rgba(1, 108, 255, 0) 0%, rgba(1, 108, 255, 0.9) 15%, rgba(1, 108, 255, 0.9) 85%, rgba(1, 108, 255, 0) 100%);
+    background: -o-linear-gradient(top, rgba(1, 108, 255, 0) 0%, rgba(1, 108, 255, 0.9) 15%, rgba(1, 108, 255, 0.9) 85%, rgba(1, 108, 255, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(1, 108, 255, 0) 0%, rgba(1, 108, 255, 0.9) 15%, rgba(1, 108, 255, 0.9) 85%, rgba(1, 108, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(1, 108, 255, 0) 0%, rgba(1, 108, 255, 0.9) 15%, rgba(1, 108, 255, 0.9) 85%, rgba(1, 108, 255, 0) 100%);
+}
+.features-block:hover .block-icon {
+    background-color: #016cff;
+}
+.features-block:hover .block-icon i {
+    color: #ffffff;
+}
+.features-block .block-icon {
+    border: 1px solid #016cff;
+}
+.features-block .block-icon i {
+    color: #016cff;
+}
+
+
+/*
+* Flickity
+*/
+
+.carousel-custom .flickity-page-dots .dot.is-selected {
+    background: #016cff;
+}
+
+
+/*
+* Heading style
+*/
+
+.title-underline-base-color {
+    border-color: #016cff;
+}
+.title-underline-thick-base-color {
+    border-color: #016cff;
+}
+.title-sideline-base-color:before {
+    background-color: #016cff;
+}
+
+
+/*
+* Preloader
+*/
+
+.pace .pace-progress {
+    background-color: #016cff;
+}
+
+
+/*
+* Text color
+*/
+
+.text-base-color {
+    color: #016cff !important;
+}
+
+
+/*
+* Text color (hover)
+*/
+
+.text-hover-base-color:hover {
+    color: #016cff !important;
+}
+
+
+/*
+* Timeline
+*/
+
+.timeline .timeline-item:before {
+    background-color: #016cff !important;
+}

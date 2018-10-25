@@ -12,31 +12,6 @@
   <div class="container">
     <form class="needs-validation" id="requestForm" novalidate>
       <div class="form-row mt-3">
-        <div class="col-md-4">
-          <label for="name">Имя</label>
-          <input type="text" class="form-control" id="name">
-          <div class="invalid-feedback">
-            Укажите имя
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="surname">Фамилия</label>
-          <input type="text" class="form-control" id="surname">
-          <div class="invalid-feedback">
-            Укажите фамилию
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email">
-            <div class="invalid-feedback">
-              Укажите вашу электронную почту
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
         <div class="col-md-3">
           <label for="city_from">Город вылета</label>
           <input type="text" class="form-control" id="city_from">
@@ -155,10 +130,30 @@
         </div>
       </div>
       <div class="form-row">
-        <button class="btn btn-primary" type="submit">Отправить</button>
+        <button class="btn btn-primary" id="submitButton" type="submit">Отправить</button>
       </div>
+      <div class="form-row">
+        <button class="btn btn-info" id="testButton" type="submit">test</button>
+      </div>
+      <br>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Бюджет</th>
+            <th scope="col">Город вылета</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
     </form>
   </div>
+
+
 
   <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields

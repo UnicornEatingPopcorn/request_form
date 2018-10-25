@@ -1,6 +1,3 @@
-console.log('Лапулечки-пупунечки в сети');
-
-$('.dropdown-toggle').dropdown()
 
 class RequestForm {
   constructor(formID){
@@ -29,10 +26,11 @@ class RequestForm {
 
     //Передает правильный заголовок в запросе
     xhr.setRequestHeader("Content-type", "application/json");
-
+    let form = this
     xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
-      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-        debugger;
+      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 201) {
+        let serverResponse = JSON.parse(xhr.response);
+        form.displayCreatedRequest(serverResponse);
         // Запрос завершен. Здесь можно обрабатывать результат.
       }
     }
@@ -45,7 +43,61 @@ class RequestForm {
   }
 
   inputs() { return Array.from(document.querySelectorAll('input, select')) };
+
+  displayCreatedRequest(request) {
+    var requestsList = document.querySelectorAll("tbody")[0];
+    var createdRequest = document.createElement("tr");
+
+    createdRequest.innerHTML = `<td scope="row">${request.id}</td><td>${request.budget}</td><td>${request.city_from}</td><td><a href="#" class="delete">X</a></td>`
+    requestsList.appendChild(createdRequest);
+
+    return true
+  }
+
+  displayCreatedRequests() {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", 'http://localhost:3000/user_requests', true);
+
+    //Передает правильный заголовок в запросе
+    xhr.setRequestHeader("Content-type", "application/json");
+    let form = this
+    xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
+      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+        var createdRequests = JSON.parse(xhr.response)
+        createdRequests.forEach(function(element) {
+          form.displayCreatedRequest(element);
+        })
+
+        // Запрос завершен. Здесь можно обрабатывать результат.
+      }
+    }
+    xhr.send();
+  }
+
+  destroyRequest(id) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("DELETE", 'http://localhost:3000/user_requests/' + id, true);
+
+    //Передает правильный заголовок в запросе
+    xhr.setRequestHeader("Content-type", "application/json");
+    let form = this;
+    xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
+      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+
+        var createdRequests = JSON.parse(xhr.response)
+        createdRequests.forEach(function(element) {
+          form.displayCreatedRequest(element);
+        })
+
+        // Запрос завершен. Здесь можно обрабатывать результат.
+      }
+    }
+    xhr.send();
+  }
 }
+
+
+
 
 
 
@@ -70,3 +122,32 @@ class InputParser {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', function(){ // Аналог $(document).ready(function(){
+  let requestForm = new RequestForm();
+  requestForm.displayCreatedRequests();
+
+});
+
+let submitButton = document.getElementById('submitButton');
+submitButton.onclick = function() {
+  let requestForm = new RequestForm();
+  requestForm.sendUserRequestForm();
+}
+
+let deleteButtons = Array.from(document.querySelectorAll('.delete'));
+
+deleteButtons.forEach(function(deleteButton) {
+console.log(1)
+  deleteButton.addEventListener('click', function(e){
+
+    e.target.parentElement.parentElement.remove()
+    // Delete book
+    //  ui.deleteBook(e.target);
+
+    // Show message
+    //  ui.showAlert('Book Removed!', 'success');
+    e.preventDefault();
+  });
+
+})

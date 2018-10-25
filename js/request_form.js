@@ -81,7 +81,7 @@ class RequestForm {
     //Передает правильный заголовок в запросе
     xhr.setRequestHeader("Content-type", "application/json");
     xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
-      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+      if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 204) {
         event.target.parentElement.parentElement.remove()
       }
     }

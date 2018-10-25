@@ -48,7 +48,7 @@ class RequestForm {
     var requestsList = document.querySelectorAll("tbody")[0];
     var createdRequest = document.createElement("tr");
 
-    createdRequest.innerHTML = `<td scope="row">${request.id}</td><td>${request.budget}</td><td>${request.city_from}</td><td><a href="#" class="delete">X</a></td>`
+    createdRequest.innerHTML = `<td class='id' scope="row">${request.id}</td><td>${request.budget}</td><td>${request.city_from}</td><td><a href="#" class="delete">X</a></td>`
     requestsList.appendChild(createdRequest);
 
     return true
@@ -76,24 +76,18 @@ class RequestForm {
 
   destroyRequest(id) {
     var xhr = new XMLHttpRequest();
-    xhr.open("DELETE", 'http://localhost:3000/user_requests/' + id, true);
+    xhr.open("DELETE", `http://localhost:3000/user_requests/${id}`, true);
 
     //Передает правильный заголовок в запросе
     xhr.setRequestHeader("Content-type", "application/json");
-    let form = this;
     xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
       if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-
-        var createdRequests = JSON.parse(xhr.response)
-        createdRequests.forEach(function(element) {
-          form.displayCreatedRequest(element);
-        })
-
-        // Запрос завершен. Здесь можно обрабатывать результат.
+        event.target.parentElement.parentElement.remove()
       }
     }
     xhr.send();
   }
+
 }
 
 
@@ -135,19 +129,11 @@ submitButton.onclick = function() {
   requestForm.sendUserRequestForm();
 }
 
-let deleteButtons = Array.from(document.querySelectorAll('.delete'));
-
-deleteButtons.forEach(function(deleteButton) {
-console.log(1)
-  deleteButton.addEventListener('click', function(e){
-
-    e.target.parentElement.parentElement.remove()
-    // Delete book
-    //  ui.deleteBook(e.target);
-
-    // Show message
-    //  ui.showAlert('Book Removed!', 'success');
-    e.preventDefault();
-  });
-
-})
+document.querySelector('table').addEventListener('click', function(event){
+  if (event.target.classList.contains('delete')){
+    let id = event.target.parentElement.parentElement.querySelector('.id').innerText
+    let requestForm = new RequestForm();
+    requestForm.destroyRequest(id)
+    event.preventDefault();
+  }
+});

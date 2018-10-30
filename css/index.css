@@ -48,3 +48,11 @@ body, html {
 .dropdown-toggle {
   margin-right: 0 !important;
 }
+
+.editBudgetInput, .submitBudget {
+  display: none;
+}
+
+.editBudgetInput {
+  width: 100px;
+}

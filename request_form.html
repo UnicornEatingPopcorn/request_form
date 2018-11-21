@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Заявка путешественника</title>
+
+  <link href="rinjani_theme/html/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome CSS -->
+  <!-- <link href="rinjani_theme/html/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- Include all css plugins (below), or include individual files as needed -->
+  <link href="rinjani_theme/html/assets/css/flickity.min.css" rel="stylesheet" type="text/css">
+  <link href="rinjani_theme/html/assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="rinjani_theme/html/assets/css/theme.css" rel="stylesheet" type="text/css">
+  <link href="rinjani_theme/html/assets/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Color Scheme CSS -->
+  <link href="rinjani_theme/html/assets/css/color_orange.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
 
@@ -13,101 +28,30 @@
     <form class="needs-validation" id="requestForm" novalidate>
       <div class="form-row mt-3">
         <div class="col-md-3">
-          <label for="city_from">Город вылета</label>
-          <input type="text" class="form-control" id="city_from">
+          <label for="city_from">Departure city</label>
+          <input type="text" class="form-control" id="city_from" required>
           <div class="invalid-feedback">
-            Пожалуйста, укажите город вылета
+            Please specify city of departure
           </div>
         </div>
         <div class="col-md-3">
-          <label for="country_from">Страна вылета</label>
-          <input type="text" class="form-control" id="country_from">
+          <label for="country_from">Departure country</label>
+          <input type="text" class="form-control" id="country_from" required>
           <div class="invalid-feedback">
-            Пожалуйста, укажите страну, из которой отправляетесь в путешествие
+            Please specify country of departure
           </div>
         </div>
         <div class="col-md-3">
-          <label for="city_to">Город прилета</label>
-          <input type="text" class="form-control" id="city_to">
+          <label for="departure_on">Departure date</label>
+          <input type="text" class="form-control" id="departure_on" required>
           <div class="invalid-feedback">
-            Пожалуйста, укажите город, в который направляетесь
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="country_to">Страна прилета</label>
-          <input type="text" class="form-control" id="country_to">
-          <div class="invalid-feedback">
-            Пожалуйста, укажите страну, в которую направляетесь
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="form-row">
-        <div class="col-md-3">
-          <label for="city_return">Город возвращения</label>
-          <input type="text" class="form-control" id="city_return">
-          <div class="invalid-feedback">
-            Пожалуйста, укажите в какой город планируете возвращение
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="country_return">Страна возвращения </label>
-          <input type="text" class="form-control" id="country_return">
-          <div class="invalid-feedback">
-            Пожалуйста, укажите в какую страну планируете возвращение
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="quantity_of_people">Количество человек</label>
-          <input type="text" class="form-control" id="quantity_of_people">
-          <div class="invalid-feedback">
-            Пожалуйста, укажите сколько человек едет в путешествие
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="budget">Бюджет</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="identificator">$</span>
-            </div>
-            <input type="text" class="form-control" id="budget" aria-describedby="inputGroupPrepend">
-            <div class="invalid-feedback">
-              Пожалуйста, укажите сумму
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="form-row">
-        <div class="col-md-3">
-          <label for="departure_on">Дата отправления</label>
-          <input type="text" class="form-control" id="departure_on">
-          <div class="invalid-feedback">
-            Укажите желаемую дату отправления
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="return_on">Дата возвращения</label>
-          <input type="text" class="form-control" id="return_on">
-          <div class="invalid-feedback">
-            Укажите желаемую дату возвращения
+            Please specify the desired date of departure
           </div>
         </div>
         <div class="col-md-3">
           <div class="form-group">
-            <label for="departure_time">Время отправления</label>
-            <select class="form-control" id="departure_time">
-              <option value="6:00 - 12:00">6:00 - 12:00</option>
-              <option value="12:00 - 18:00">12:00 - 18:00</option>
-              <option value="18:00 - 24:00">18:00 - 24:00</option>
-              <option value="24:00 - 6:00">24:00 - 6:00</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="form-group">
-            <label for="return_time">Время прибытия</label>
-            <select class="form-control" id="return_time">
+            <label for="departure_time">Departure time</label>
+            <select class="form-control" id="departure_time" required>
               <option value="6:00 - 12:00">6:00 - 12:00</option>
               <option value="12:00 - 18:00">12:00 - 18:00</option>
               <option value="18:00 - 24:00">18:00 - 24:00</option>
@@ -116,67 +60,125 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="form-row">
-        <div class="form-group">
-          <p><div class="form-check">
-            <input class="form-check-input" type="checkbox" id="agreement">
-            <label class="form-check-label" for="agreement">
-              Я согласен(-на) с условиями компании на предоставление услуг.
-            </label>
-            <div class="invalid-feedback">
-              Пожалуйста, подтвердите ваше согласие на обработку данных прежде чем отправите заявку
-            </div>
-          </div></p>
+        <div class="col-md-3">
+          <label for="city_to">Arrival city</label>
+          <input type="text" class="form-control" id="city_to" required>
+          <div class="invalid-feedback">
+            Please specify arrival city
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="country_to">Arrival country</label>
+          <input type="text" class="form-control" id="country_to" required>
+          <div class="invalid-feedback">
+            Please specify arrival country
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="return_on">Arrival date</label>
+          <input type="text" class="form-control" id="return_on" required>
+          <div class="invalid-feedback">
+            Please specify the desired date of arrival
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="return_time">Arrival time</label>
+            <select class="form-control" id="return_time" required>
+              <option value="6:00 - 12:00">6:00 - 12:00</option>
+              <option value="12:00 - 18:00">12:00 - 18:00</option>
+              <option value="18:00 - 24:00">18:00 - 24:00</option>
+              <option value="24:00 - 6:00">24:00 - 6:00</option>
+            </select>
+          </div>
         </div>
       </div>
-      <div class="form-row">
-        <button class="btn btn-primary" id="submitButton" type="submit">Отправить</button>
-      </div>
-      <br>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Бюджет</th>
-            <th scope="col">Город вылета</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </form>
-  </div>
+<br>
+        <div class="form-row">
+          <div class="col-md-3">
+            <label for="quantity_of_people">How many people?</label>
+            <input type="text" class="form-control" id="quantity_of_people" required>
+            <div class="invalid-feedback">
+              Pleasе specify the number of people
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="budget">Budget</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="identificator">$</span>
+              </div>
+              <input type="text" class="form-control" id="budget" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please specify the desired budjet
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="form-row">
+          <div class="form-group">
+            <p><div class="form-check">
+              <input class="form-check-input" type="checkbox" id="agreement" required>
+              <label class="form-check-label" for="agreement">
+                I agree with the terms of the company for the provision of services.
+              </label>
+              <div class="invalid-feedback">
+                Please acknowledge your consent to data processing.
+              </div>
+            </div></p>
+          </div>
+        </div>
+        <div class="form-row">
+          <button class="btn btn-base-color" id="submitButton" type="submit">Send</button>
+        </div>
+        <br>
+        <table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Budget</th>
+              <th scope="col">Departure city</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </form>
+    </div>
 
 
 
-  <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="js/request_form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="js/request_form.js"></script>
 
-</body>
+  </body>
 
-</html>
+  </html>

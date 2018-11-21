@@ -9,6 +9,10 @@
 
 body {
   position: relative;
+  background: url('../background.jpg');
+  background-color: #F5F5F5;
+  background-repeat: no-repeat;
+  /* background-position: center bottom; */
 }
 
 #home-bg-parallax {

@@ -12,7 +12,7 @@ body {
   background: url('../background.jpg');
   background-color: #F5F5F5;
   background-repeat: no-repeat;
-  /* background-position: center bottom; */
+  background-position: center;
 }
 
 #home-bg-parallax {

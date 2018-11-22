@@ -43,7 +43,7 @@ class RequestForm {
     // xhr.send(document);
   }
 
-  inputs() { return Array.from(document.querySelectorAll('input, select')); }
+  inputs() { return Array.from(document.querySelector('#requestForm').querySelectorAll('input, select')); }
 
   displayCreatedRequest(request) {
     const requestsList = document.querySelectorAll('tbody')[0];
@@ -138,10 +138,13 @@ document.addEventListener('DOMContentLoaded', () => { // Аналог $(document
   requestForm.displayCreatedRequests();
 });
 
-const submitButton = document.getElementById('submitButton');
-submitButton.onclick = function () {
-  const requestForm = new RequestForm();
-  requestForm.sendUserRequestForm();
+const form = document.getElementById('requestForm');
+
+form.onsubmit = function sendForm() {
+  if (form.checkValidity() === true) {
+    const requestForm = new RequestForm();
+    requestForm.sendUserRequestForm();
+  }
 };
 
 document.querySelector('table').addEventListener('click', (event) => {

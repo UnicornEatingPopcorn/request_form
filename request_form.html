@@ -21,6 +21,7 @@
   <link href="rinjani_theme/html/assets/css/color_orange.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 </head>
 <body>
@@ -43,7 +44,7 @@
         </div>
         <div class="col-md-3">
           <label for="departure_on">Departure date</label>
-          <input type="text" class="form-control" id="departure_on" required>
+          <input type="text" autocomplete="off" class="form-control" id="departure_on" required>
           <div class="invalid-feedback">
             Please specify the desired date of departure
           </div>
@@ -78,7 +79,7 @@
         </div>
         <div class="col-md-3">
           <label for="return_on">Arrival date</label>
-          <input type="text" class="form-control" id="return_on" required>
+          <input type="text" autocomplete="off" class="form-control" id="return_on" required>
           <div class="invalid-feedback">
             Please specify the desired date of arrival
           </div>
@@ -177,7 +178,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="js/request_form.js"></script>
+
 
   </body>
 
